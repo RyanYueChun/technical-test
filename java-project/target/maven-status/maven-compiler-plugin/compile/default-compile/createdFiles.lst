@@ -1,0 +1,8 @@
+investment/service/InvestmentServiceImpl.class
+investment/controller/InvestmentController.class
+investment/models/Investment.class
+investment/service/InvestmentService.class
+investment/models/InvestmentJson.class
+investment/config/InvestmentConfig.class
+investment/repository/InvestmentRepository.class
+investment/Application.class
