@@ -2,14 +2,15 @@ package investment.controller;
 
 import investment.models.Investment;
 import investment.models.InvestmentJson;
+import investment.models.MessageLog;
 import investment.service.InvestmentService;
+import investment.service.MessageLogService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @RequestMapping(value = "/investments")
@@ -17,45 +18,61 @@ public class InvestmentController {
 
     @Autowired
     InvestmentService investmentService;
+    @Autowired
+    MessageLogService messageLogsService;
 
     @CrossOrigin
     @GetMapping(value = "/getById/{investment-id}")
-    public InvestmentJson getInvestmentById(@PathVariable(name = "investment-id") String id) {
+    public ResponseEntity<InvestmentJson> getInvestmentById(@PathVariable(name = "investment-id") String id) {
+        logEvent("fetching investment by Id = " + id);
         Optional<Investment> optionalInvestment = investmentService.findById(id);
 
         if (optionalInvestment.isPresent()) {
             InvestmentJson investmentJson = new InvestmentJson();
-            investmentJson.fillJsonFromInvestment(optionalInvestment.get());
+            try {
+                investmentJson.fillJsonFromInvestment(optionalInvestment.get());
+            } catch (IllegalFormatConversionException e) {
+                logEvent(e.getLocalizedMessage());
+                return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            }
 
-            return investmentJson;
+            logEvent("investment fetched by Id = " + id);
+            return new ResponseEntity<>(investmentJson, HttpStatus.OK);
         }
-        return new InvestmentJson();
+        logEvent("could not find investment corresponding to id = " + id);
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @CrossOrigin
     @GetMapping(value = "/getAll")
-    public List<InvestmentJson> getAllInvestments() {
+    public ResponseEntity<List<InvestmentJson>> getAllInvestments() {
+        logEvent("fetched all investments");
         Iterator<Investment> investmentIterator = investmentService.findAll().iterator();
-
 
         if (investmentIterator.hasNext()) {
             List<InvestmentJson> investmentJsons = new ArrayList<>();
 
             while (investmentIterator.hasNext()) {
                 InvestmentJson investmentJson = new InvestmentJson();
-                investmentJson.fillJsonFromInvestment(investmentIterator.next());
+                try {
+                    investmentJson.fillJsonFromInvestment(investmentIterator.next());
+                } catch (IllegalFormatConversionException e) {
+                    logEvent(e.getLocalizedMessage());
+                    return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+                }
                 investmentJsons.add(investmentJson);
             }
-
-            return investmentJsons;
+            logEvent("all investments fetched");
+            return new ResponseEntity<>(investmentJsons, HttpStatus.OK);
         }
-
-        return new ArrayList<InvestmentJson>();
+        logEvent("could not fetch investments");
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @CrossOrigin
     @PostMapping(value = "/saveAll")
-    public String saveAllInvestments(@RequestBody Iterable<InvestmentJson> investmentJsons) {
+    public ResponseEntity<String> saveAllInvestments(@RequestBody Iterable<InvestmentJson> investmentJsons) {
+        logEvent("save a list of investments");
         Iterator<InvestmentJson> investmentJsonIterator = investmentJsons.iterator();
 
         if (investmentJsonIterator.hasNext()) {
@@ -63,20 +80,38 @@ public class InvestmentController {
 
             while (investmentJsonIterator.hasNext()) {
                 Investment investment = new Investment();
-                investment.fillInvestmentFromJson(investmentJsonIterator.next());
+                try {
+                    investment.fillInvestmentFromJson(investmentJsonIterator.next());
+                } catch (IllegalFormatConversionException e) {
+                    logEvent(e.toString());
+                    return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+                }
                 investments.add(investment);
             }
             investmentService.saveAll(investments);
-            return investments.size() + " investmesnts added!";
-        }
 
-        return "No valid investment to add";
+            logEvent("list of investments saved");
+            return new ResponseEntity<>(investments.size() + " investmesnts added!", HttpStatus.OK);
+        }
+        logEvent("could not save list of investment");
+        return new ResponseEntity<>("No valid investments to add", HttpStatus.BAD_REQUEST);
     }
 
     @CrossOrigin
-    @DeleteMapping(value = "/deleteInvestmentById/{investment-id}")
-    public String deleteInvestmentById(@PathVariable(name = "investment-id") String id) {
+    @DeleteMapping(value = "/deleteById/{investment-id}")
+    public ResponseEntity<String> deleteInvestmentById(@PathVariable(name = "investment-id") String id) {
+        logEvent("deleting investmentby id = " + id);
         investmentService.deleteById(id);
-        return "Investment of id : " + id + " deleted";
+
+        logEvent("deleted investment by id = " + id);
+        return new ResponseEntity<>("Investment of id : " + id + " deleted", HttpStatus.OK);
+    }
+
+    private void logEvent(String event) {
+        MessageLog messageLog = new MessageLog();
+        messageLog.setTimeStamp(Calendar.getInstance());
+        messageLog.setMessage(event);
+
+        messageLogsService.save(messageLog);
     }
 }

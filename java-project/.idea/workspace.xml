@@ -2,66 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="173d5325-a908-4c7e-a013-525356ee4346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/InterviewProjects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/2/d/2d8a220c35bade4cf5a3d6351608fe6aa289cd2f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/2/d/2dc8ce9b01df1feed7c166c41e1250352ae15955" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/3/d/3d7602f8a3be70b1b83e62f89f7a6c816a4146a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/5/2/52309ba4ff1dd9ae10af70f60a8a905ddf82aa7d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/5/f/5f38db1f3c2694cbb1ad12a2836a094d846bd2f2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/9/d/9d9455f861e205e93bb01543dff952e113486652" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/b/4/b431f4a46fd6231295c576131a57b34bd37d3234" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/d/1/d17019ad5879cb93ebf231057a5720498bc8179b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/d/b/db98d8b7c35a01bd492d4e2f9887fd4c3bba792d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/config/ElasticsearchConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/controller/InvestmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/models/Investment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/models/InvestmentId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/models/MessageFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/repository/InvestmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/service/InvestmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/investment/paris/region/service/InvestmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-end/technical-test-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4eb2603700edefd0a7f1d94276c43cd763c31d9a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55777c4faf5972adf1a0998be2c3ae04308a5b11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/651d45f996e67595505e578d7ad55c35e94f2387" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Investment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/config/InvestmentConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/controller/InvestmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/models/Investment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/models/InvestmentJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/repository/InvestmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/config/InvestmentConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/controller/InvestmentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/models/Investment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/repository/InvestmentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/service/InvestmentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/investment/service/InvestmentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../convertJsonForElasticSearch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/investment/controller/MessageLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/investment/models/MessageLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/investment/repository/MessageLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/investment/service/MessageLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/investment/service/MessageLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/InterviewProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/InterviewProjects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ScriptStart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../ScriptStart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6cffc6dc8d77b698e9df211c940b4c8022824fbc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6cffc6dc8d77b698e9df211c940b4c8022824fbc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d296958f17bfa761f9842f1439faedd9759c416" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d296958f17bfa761f9842f1439faedd9759c416" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c270f24d8a01c87903a8cebb3226acbfdc24d32a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c270f24d8a01c87903a8cebb3226acbfdc24d32a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/investment/controller/InvestmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/controller/InvestmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/investment/models/InvestmentJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/models/InvestmentJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/investment/controller/InvestmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/controller/InvestmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/investment/models/InvestmentJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/models/InvestmentJson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/investment/service/InvestmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/service/InvestmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/investment/service/InvestmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/service/InvestmentServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../back-end" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../firstSpringBootFrontBackProject/back-app" />
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -150,18 +111,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="803" y="257" width="554" height="606" key="#com.intellij.ide.util.MemberChooser" timestamp="1578091632543">
+    <state x="803" y="257" width="554" height="606" key="#com.intellij.ide.util.MemberChooser" timestamp="1578168241589">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="803" y="257" width="554" height="606" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1578091632543" />
+    <state x="803" y="257" width="554" height="606" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1578168241589" />
     <state x="748" y="414" width="494" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578076530419">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="748" y="414" width="494" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/70.27.1850.1053@70.27.1850.1053" timestamp="1578076530419" />
-    <state x="70" y="27" width="762" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578087769824">
+    <state x="70" y="27" width="762" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578168896227">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="70" y="27" width="762" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578087769824" />
+    <state x="70" y="27" width="762" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578168896227" />
     <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578091259914">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -170,54 +131,58 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578152030709" />
+    <state x="753" y="257" key="#xdebugger.evaluate" timestamp="1578171089923">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="753" y="257" key="#xdebugger.evaluate/70.27.1850.1053@70.27.1850.1053" timestamp="1578171089923" />
     <state x="572" y="150" width="836" height="814" key="CommitChangelistDialog2" timestamp="1578144448014">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="572" y="150" width="836" height="814" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1578144448014" />
-    <state width="566" height="466" key="DebuggerActiveHint" timestamp="1578144823913">
+    <state width="566" height="466" key="DebuggerActiveHint" timestamp="1578171868942">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="566" height="466" key="DebuggerActiveHint/70.27.1850.1053@70.27.1850.1053" timestamp="1578144823913" />
-    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1578089617035">
+    <state width="566" height="466" key="DebuggerActiveHint/70.27.1850.1053@70.27.1850.1053" timestamp="1578171868942" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1578156515833">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1578089617035" />
-    <state width="1804" height="275" key="GridCell.Tab.0.bottom" timestamp="1578152261641">
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1578156515833" />
+    <state width="1804" height="173" key="GridCell.Tab.0.bottom" timestamp="1578241627688">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578152261641" />
-    <state width="1804" height="275" key="GridCell.Tab.0.center" timestamp="1578152261641">
+    <state width="1804" height="173" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578241627688" />
+    <state width="1804" height="173" key="GridCell.Tab.0.center" timestamp="1578241627688">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578152261641" />
-    <state width="1804" height="275" key="GridCell.Tab.0.left" timestamp="1578152261641">
+    <state width="1804" height="173" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578241627688" />
+    <state width="1804" height="173" key="GridCell.Tab.0.left" timestamp="1578241627688">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578152261641" />
-    <state width="1804" height="275" key="GridCell.Tab.0.right" timestamp="1578152261641">
+    <state width="1804" height="173" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578241627688" />
+    <state width="1804" height="173" key="GridCell.Tab.0.right" timestamp="1578241627688">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578152261641" />
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1578145112775">
+    <state width="1804" height="173" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578241627688" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1578172440715">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578145112775" />
-    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1578145112775">
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578172440715" />
+    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1578172440715">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578145112775" />
-    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1578145112775">
+    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578172440715" />
+    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1578172440715">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578145112775" />
-    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1578145112775">
+    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578172440715" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1578172440715">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578145112775" />
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1578143198909">
+    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578172440715" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1578238247072">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578143198909" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578238247072" />
     <state x="659" y="252" key="run.anything.popup" timestamp="1578145064866">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

@@ -32,19 +32,19 @@ public class InvestmentJson {
         this.ville = investment.getCity();
         this.mandataire = investment.getMandatary();
         this.ppi = investment.getPpi();
-        this.nombre_de_lots = Float.valueOf(investment.getLotAmount());
+        this.nombre_de_lots = Float.parseFloat(investment.getLotAmount());
         this.lycee = investment.getHighSchool();
         this.notification_du_marche = investment.getMarketNotification();
         this.codeuai = investment.getUaiCode();
-        this.longitude = Float.valueOf(investment.getLongitude());
+        this.longitude = Float.parseFloat(investment.getLongitude());
         this.etat_d_avancement = investment.getAdvancementState();
-        this.montant_des_ap_votes_en_meu = Float.valueOf(investment.getAmountApVotesInMeu());
+        this.montant_des_ap_votes_en_meu = Float.parseFloat(investment.getAmountApVotesInMeu());
         this.cao_attribution = investment.getCaoAttribution();
-        this.latitude = Float.valueOf(investment.getLatitude());
+        this.latitude = Float.parseFloat(investment.getLatitude());
         this.maitrise_d_oeuvre = investment.getProjectManagement();
         this.mode_de_devolution = investment.getDevolutionMode();
         this.annee_d_individualisation = investment.getIndividualisationYear();
-        this.enveloppe_prev_en_meu = Float.valueOf(investment.getPrevEnvelopeInMeu());
+        this.enveloppe_prev_en_meu = Float.parseFloat(investment.getPrevEnvelopeInMeu());
 
     }
 

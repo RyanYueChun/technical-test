@@ -19,3 +19,13 @@ k
 ;src/main/java/investment/service/InvestmentServiceImpl.java,2/b/2b993e993288ec371a212a4f5855e32144bafc93
 m
 =src/main/java/investment/controller/InvestmentController.java,c/2/c270f24d8a01c87903a8cebb3226acbfdc24d32a
+_
+/src/main/java/investment/models/MessageLog.java,0/c/0c32ff03330b5c32c8abaea7c78287e58d1f68f2
+m
+=src/main/java/investment/repository/MessageLogRepository.java,c/e/cea21bc87eb04a75254836ffe48d2f5f002876f9
+g
+7src/main/java/investment/service/MessageLogService.java,c/a/ca4021d04292973f34f54275eb8ebabd6948258e
+k
+;src/main/java/investment/service/MessageLogServiceImpl.java,0/c/0c1eab989d5d1a0931c9e77ff739eef6cb8b6493
+m
+=src/main/java/investment/controller/MessageLogController.java,f/a/fa3c1e27ca64c4fbbe9f130f4ff1086954cb2e15
