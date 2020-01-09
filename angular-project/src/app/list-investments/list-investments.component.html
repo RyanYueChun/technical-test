@@ -1,0 +1,49 @@
+<div *ngIf="investmentsToList.length > 0">
+    <h1>List of all Investments details :</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Titre de l'operation</th>
+            <th>Entreprise</th>
+            <th>Annee de livraison</th>
+            <th>Ville</th>
+            <th>Mandataire</th>
+            <th>Ppi</th>
+            <th>Nombre de lots</th>
+            <th>Lycee</th>
+            <th>Notification_du_marche</th>
+            <th>Codeuai</th>
+            <th>Longitude</th>
+            <th>Etat d'avancement</th>
+            <th>Montant des ap votes en meu</th>
+            <th>Cao attribution</th>
+            <th>Latitude</th>
+            <th>Maitrise d'oeuvre</th>
+            <th>Mode de devolution</th>
+            <th>Annee d'individualisation</th>
+            <th>Enveloppe prev en meu</th>
+        </tr>
+        <tr *ngFor="let investment of investmentsToList">
+            <td>{{investment.id}}</td>
+            <td>{{investment.titreoperation}}</td>
+            <td>{{investment.entreprise}}</td>
+            <td>{{investment.annee_de_livraison}}</td>
+            <td>{{investment.ville}}</td>
+            <td>{{investment.mandataire}}</td>
+            <td>{{investment.ppi}}</td>
+            <td>{{investment.nombre_de_lots}}</td>
+            <td>{{investment.lycee}}</td>
+            <td>{{investment.notification_du_marche}}</td>
+            <td>{{investment.codeuai}}</td>
+            <td>{{investment.longitude}}</td>
+            <td>{{investment.etat_d_avancement}}</td>
+            <td>{{investment.montant_des_ap_votes_en_meu}}</td>
+            <td>{{investment.cao_attribution}}</td>
+            <td>{{investment.latitude}}</td>
+            <td>{{investment.maitrise_d_oeuvre}}</td>
+            <td>{{investment.mode_de_devolution}}</td>
+            <td>{{investment.annee_d_individualisation}}</td>
+            <td>{{investment.enveloppe_prev_en_meu}}</td>
+        </tr>
+    </table>
+</div>

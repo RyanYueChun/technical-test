@@ -13,11 +13,11 @@ public class InvestmentJson {
     private String lycee;
     private String notification_du_marche;
     private String codeuai;
-    private float longitude;
+    private double longitude;
     private String etat_d_avancement;
     private float montant_des_ap_votes_en_meu;
     private String cao_attribution;
-    private float latitude;
+    private double latitude;
     private String maitrise_d_oeuvre;
     private String mode_de_devolution;
     private String annee_d_individualisation;
@@ -32,19 +32,19 @@ public class InvestmentJson {
         this.ville = investment.getCity();
         this.mandataire = investment.getMandatary();
         this.ppi = investment.getPpi();
-        this.nombre_de_lots = Float.parseFloat(investment.getLotAmount());
+        this.nombre_de_lots = Float.parseFloat(investment.getLotAmount() != null ? investment.getLotAmount() : "0");
         this.lycee = investment.getHighSchool();
         this.notification_du_marche = investment.getMarketNotification();
         this.codeuai = investment.getUaiCode();
-        this.longitude = Float.parseFloat(investment.getLongitude());
+        this.longitude = Double.parseDouble(investment.getLongitude() != null ? investment.getLongitude() : "0");
         this.etat_d_avancement = investment.getAdvancementState();
-        this.montant_des_ap_votes_en_meu = Float.parseFloat(investment.getAmountApVotesInMeu());
+        this.montant_des_ap_votes_en_meu = Float.parseFloat(investment.getAmountApVotesInMeu() != null ? investment.getAmountApVotesInMeu() : "0");
         this.cao_attribution = investment.getCaoAttribution();
-        this.latitude = Float.parseFloat(investment.getLatitude());
+        this.latitude = Double.parseDouble(investment.getLatitude() != null ? investment.getLatitude() : "0");
         this.maitrise_d_oeuvre = investment.getProjectManagement();
         this.mode_de_devolution = investment.getDevolutionMode();
         this.annee_d_individualisation = investment.getIndividualisationYear();
-        this.enveloppe_prev_en_meu = Float.parseFloat(investment.getPrevEnvelopeInMeu());
+        this.enveloppe_prev_en_meu = Float.parseFloat(investment.getPrevEnvelopeInMeu() != null ? investment.getPrevEnvelopeInMeu() : "0");
 
     }
 
@@ -136,7 +136,7 @@ public class InvestmentJson {
         this.codeuai = codeuai;
     }
 
-    public float getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
@@ -168,7 +168,7 @@ public class InvestmentJson {
         this.cao_attribution = cao_attribution;
     }
 
-    public float getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 

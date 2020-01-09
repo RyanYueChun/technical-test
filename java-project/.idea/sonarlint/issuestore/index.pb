@@ -29,3 +29,5 @@ k
 ;src/main/java/investment/service/MessageLogServiceImpl.java,0/c/0c1eab989d5d1a0931c9e77ff739eef6cb8b6493
 m
 =src/main/java/investment/controller/MessageLogController.java,f/a/fa3c1e27ca64c4fbbe9f130f4ff1086954cb2e15
+d
+4src/main/java/investment/models/ResponseMessage.java,0/4/043eddeaf0b2d713777a855c11f16ce8f25a75a2

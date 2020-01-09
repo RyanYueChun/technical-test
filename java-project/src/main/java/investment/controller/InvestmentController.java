@@ -3,6 +3,7 @@ package investment.controller;
 import investment.models.Investment;
 import investment.models.InvestmentJson;
 import investment.models.MessageLog;
+import investment.models.ResponseMessage;
 import investment.service.InvestmentService;
 import investment.service.MessageLogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +47,7 @@ public class InvestmentController {
     @CrossOrigin
     @GetMapping(value = "/getAll")
     public ResponseEntity<List<InvestmentJson>> getAllInvestments() {
-        logEvent("fetched all investments");
+        logEvent("fetching all investments");
         Iterator<Investment> investmentIterator = investmentService.findAll().iterator();
 
         if (investmentIterator.hasNext()) {
@@ -71,8 +72,9 @@ public class InvestmentController {
 
     @CrossOrigin
     @PostMapping(value = "/saveAll")
-    public ResponseEntity<String> saveAllInvestments(@RequestBody Iterable<InvestmentJson> investmentJsons) {
-        logEvent("save a list of investments");
+    public ResponseEntity<ResponseMessage> saveAllInvestments(@RequestBody Iterable<InvestmentJson> investmentJsons) {
+        ResponseMessage responseMessage = new ResponseMessage();
+        logEvent("saving a list of investments");
         Iterator<InvestmentJson> investmentJsonIterator = investmentJsons.iterator();
 
         if (investmentJsonIterator.hasNext()) {
@@ -90,21 +92,25 @@ public class InvestmentController {
             }
             investmentService.saveAll(investments);
 
+            responseMessage.setContent(investments.size() + " investmesnts added!");
             logEvent("list of investments saved");
-            return new ResponseEntity<>(investments.size() + " investmesnts added!", HttpStatus.OK);
+            return new ResponseEntity<>(responseMessage, HttpStatus.OK);
         }
+        responseMessage.setContent("No valid investments to add");
         logEvent("could not save list of investment");
-        return new ResponseEntity<>("No valid investments to add", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(responseMessage, HttpStatus.BAD_REQUEST);
     }
 
     @CrossOrigin
     @DeleteMapping(value = "/deleteById/{investment-id}")
-    public ResponseEntity<String> deleteInvestmentById(@PathVariable(name = "investment-id") String id) {
+    public ResponseEntity<ResponseMessage> deleteInvestmentById(@PathVariable(name = "investment-id") String id) {
+        ResponseMessage responseMessage = new ResponseMessage();
         logEvent("deleting investmentby id = " + id);
         investmentService.deleteById(id);
 
+        responseMessage.setContent("Investment of id : " + id + " deleted");
         logEvent("deleted investment by id = " + id);
-        return new ResponseEntity<>("Investment of id : " + id + " deleted", HttpStatus.OK);
+        return new ResponseEntity<>(responseMessage, HttpStatus.OK);
     }
 
     private void logEvent(String event) {
