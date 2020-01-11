@@ -1,21 +1,36 @@
-<h1>Selected Investment details :</h1>
-<li>Id : {{selectedInvestment.id}}</li>
-<li>Titre de l'operation : {{selectedInvestment.titreoperation}}</li>
-<li>Entreprise : {{selectedInvestment.entreprise}}</li>
-<li>Annee de livraison : {{selectedInvestment.annee_de_livraison}}</li>
-<li>Ville : {{selectedInvestment.ville}}</li>
-<li>Mandataire : {{selectedInvestment.mandataire}}</li>
-<li>Ppi : {{selectedInvestment.ppi}}</li>
-<li>Nombre de lots : {{selectedInvestment.nombre_de_lots}}</li>
-<li>Lycee : {{selectedInvestment.lycee}}</li>
-<li>Notification_du_marche : {{selectedInvestment.notification_du_marche}}</li>
-<li>Codeuai : {{selectedInvestment.codeuai}}</li>
-<li>Longitude : {{selectedInvestment.longitude}}</li>
-<li>Etat d'avancement : {{selectedInvestment.etat_d_avancement}}</li>
-<li>Montant des ap votes en meu : {{selectedInvestment.montant_des_ap_votes_en_meu}}</li>
-<li>Cao attribution : {{selectedInvestment.cao_attribution}}</li>
-<li>Latitude : {{selectedInvestment.latitude}}</li>
-<li>Maitrise d'oeuvre : {{selectedInvestment.maitrise_d_oeuvre}}</li>
-<li>Mode de devolution : {{selectedInvestment.mode_de_devolution}}</li>
-<li>Annee d'individualisation : {{selectedInvestment.annee_d_individualisation}}</li>
-<li>Enveloppe prev en meu : {{selectedInvestment.enveloppe_prev_en_meu}}</li>
+<section class="small-content">
+    <h1>Investment details</h1>
+    
+    <div>
+        <label>
+            Look for an investment by Id : 
+            <input [(ngModel)]="selectedId" type="text" placeholder="Search investment by Id"/>
+        </label>
+        <button (click)="getInvestmentById()">Get by Id</button>
+        <button style="float: right;" (click)="goBack()">go back</button>
+    </div>
+
+    <h2>Selected Investment details :</h2>
+    <div class="left-and-right">
+        <span>Id : </span><span>{{selectedInvestment.id}}</span>
+        <span>Titre de l'operation : </span><span>{{selectedInvestment.titreoperation}}</span>
+        <span>Entreprise : </span><span>{{selectedInvestment.entreprise}}</span>
+        <span>Annee de livraison : </span><span>{{selectedInvestment.annee_de_livraison}}</span>
+        <span>Ville : </span><span>{{selectedInvestment.ville}}</span>
+        <span>Mandataire : </span><span>{{selectedInvestment.mandataire}}</span>
+        <span>Ppi : </span><span>{{selectedInvestment.ppi}}</span>
+        <span>Nombre de lots : </span><span>{{selectedInvestment.nombre_de_lots}}</span>
+        <span>Lycee : </span><span>{{selectedInvestment.lycee}}</span>
+        <span>Notification_du_marche : </span><span>{{selectedInvestment.notification_du_marche}}</span>
+        <span>Codeuai : </span><span>{{selectedInvestment.codeuai}}</span>
+        <span>Longitude : </span><span>{{selectedInvestment.longitude}}</span>
+        <span>Etat d'avancement : </span><span>{{selectedInvestment.etat_d_avancement}}</span>
+        <span>Montant des ap votes en meu : </span><span>{{selectedInvestment.montant_des_ap_votes_en_meu}}</span>
+        <span>Cao attribution : </span><span>{{selectedInvestment.cao_attribution}}</span>
+        <span>Latitude : </span><span>{{selectedInvestment.latitude}}</span>
+        <span>Maitrise d'oeuvre : </span><span>{{selectedInvestment.maitrise_d_oeuvre}}</span>
+        <span>Mode de devolution : </span><span>{{selectedInvestment.mode_de_devolution}}</span>
+        <span>Annee d'individualisation : </span><span>{{selectedInvestment.annee_d_individualisation}}</span>
+        <span>Enveloppe prev en meu : </span><span>{{selectedInvestment.enveloppe_prev_en_meu}}</span>
+    </div>
+</section>

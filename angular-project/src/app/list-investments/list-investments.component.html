@@ -1,8 +1,28 @@
-<div *ngIf="investmentsToList.length > 0">
-    <h1>List of all Investments details :</h1>
+<section>
+    <h1>List of investments</h1>
+    
+    <div class="small-content">
+        Filter the investments by city or advancement state :
+        <span class="left-and-right" >
+            <input type="text" placeholder="Filter by city" [(ngModel)]="investmentCity"/>
+            <button [disabled]="!investmentCity" (click)="getInvestmentsByCity()">Filter by city</button>
+            <input type="text" placeholder="Filter by advancement state" [(ngModel)]="investmentAdvancementState"/>
+            <button [disabled]="!investmentAdvancementState" (click)="getInvestmentsByAdvancementState()">Filter by advancement state</button>
+            <div></div> <!-- leave an empty cell for the grid order -->
+            <button [disabled]="!investmentCity || !investmentAdvancementState" (click)="getInvestmentsByCityAndAdvancementState()">
+                Filter by city and advancement state
+            </button>
+            <div></div> <!-- leave an empty cell for the grid order -->
+            <button (click)="getAllInvestments()">Fetch all investments</button>
+        </span>
+    </div>
+</section>
+
+<div *ngIf="investmentsArray.length > 0">
+    <h2>List of all Investments details :</h2>
     <table>
         <tr>
-            <th>Id</th>
+            <th>Id (click on an id to get its informations)</th>
             <th>Titre de l'operation</th>
             <th>Entreprise</th>
             <th>Annee de livraison</th>
@@ -23,27 +43,30 @@
             <th>Annee d'individualisation</th>
             <th>Enveloppe prev en meu</th>
         </tr>
-        <tr *ngFor="let investment of investmentsToList">
-            <td>{{investment.id}}</td>
-            <td>{{investment.titreoperation}}</td>
-            <td>{{investment.entreprise}}</td>
-            <td>{{investment.annee_de_livraison}}</td>
-            <td>{{investment.ville}}</td>
-            <td>{{investment.mandataire}}</td>
-            <td>{{investment.ppi}}</td>
-            <td>{{investment.nombre_de_lots}}</td>
-            <td>{{investment.lycee}}</td>
-            <td>{{investment.notification_du_marche}}</td>
-            <td>{{investment.codeuai}}</td>
-            <td>{{investment.longitude}}</td>
-            <td>{{investment.etat_d_avancement}}</td>
-            <td>{{investment.montant_des_ap_votes_en_meu}}</td>
-            <td>{{investment.cao_attribution}}</td>
-            <td>{{investment.latitude}}</td>
-            <td>{{investment.maitrise_d_oeuvre}}</td>
-            <td>{{investment.mode_de_devolution}}</td>
-            <td>{{investment.annee_d_individualisation}}</td>
-            <td>{{investment.enveloppe_prev_en_meu}}</td>
+        <tr *ngFor="let investment of investmentsArray">
+                <td>
+                    <a routerLink="/investment-detail/{{investment.id}}">{{investment.id}}</a>
+                </td>
+                <td>{{investment.titreoperation}}</td>
+                <td>{{investment.entreprise}}</td>
+                <td>{{investment.annee_de_livraison}}</td>
+                <td>{{investment.ville}}</td>
+                <td>{{investment.mandataire}}</td>
+                <td>{{investment.ppi}}</td>
+                <td>{{investment.nombre_de_lots}}</td>
+                <td>{{investment.lycee}}</td>
+                <td>{{investment.notification_du_marche}}</td>
+                <td>{{investment.codeuai}}</td>
+                <td>{{investment.longitude}}</td>
+                <td>{{investment.etat_d_avancement}}</td>
+                <td>{{investment.montant_des_ap_votes_en_meu}}</td>
+                <td>{{investment.cao_attribution}}</td>
+                <td>{{investment.latitude}}</td>
+                <td>{{investment.maitrise_d_oeuvre}}</td>
+                <td>{{investment.mode_de_devolution}}</td>
+                <td>{{investment.annee_d_individualisation}}</td>
+                <td>{{investment.enveloppe_prev_en_meu}}</td>
+            
         </tr>
     </table>
 </div>

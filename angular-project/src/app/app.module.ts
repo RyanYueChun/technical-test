@@ -8,13 +8,17 @@ import { ListInvestmentsComponent } from './list-investments/list-investments.co
 import { FilterInvestmentsComponent } from './filter-investments/filter-investments.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ImportInvestmentsComponent } from './import-investments/import-investments.component';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayInvestmentComponent,
     ListInvestmentsComponent,
-    FilterInvestmentsComponent
+    FilterInvestmentsComponent,
+    ImportInvestmentsComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,

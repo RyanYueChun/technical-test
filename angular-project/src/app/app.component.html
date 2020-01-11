@@ -1,22 +1,12 @@
 
+<nav>
+  <ul>
+    <li><a class="active" routerLink="/">Home</a></li>
+    <li><a routerLink="/investment-import">Upload investments from a Json file</a></li>
+    <li><a routerLink="/investment-list">Display a list of investments from the server</a></li>
+  </ul>
+</nav>
 
 <router-outlet></router-outlet>
-<app-display-investment [selectedInvestment]="currentInvestment"></app-display-investment>
 
-<div>
-    <label>Look for an investment by Id : <input #investmentId type="text" placeholder="Search investment by Id"/></label>
-    <button (click)="getInvestmentById(investmentId.value)">Get by Id</button>
-</div>
-<br>
 
-<div class="form-group">
-    <label for="file">Choose File</label>
-    <input type="file"
-           id="file"
-           (change)="onFileChange($event)">
-    <button (click)="saveAllInvestments()">Upload file to server</button>
-</div>
-
-<button (click)="getAllInvestments()">Fetch all investments</button>
-<p>{{loadingMessage}}</p>
-<app-list-investments [investmentsToList]="investmentsArray"></app-list-investments>

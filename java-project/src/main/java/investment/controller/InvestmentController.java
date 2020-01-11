@@ -113,6 +113,88 @@ public class InvestmentController {
         return new ResponseEntity<>(responseMessage, HttpStatus.OK);
     }
 
+    @CrossOrigin
+    @PostMapping(value = "/getByCity")
+    public ResponseEntity<List<InvestmentJson>> getInvestmentByCity(@RequestBody ResponseMessage body) {
+        String city = body.getContent();
+        logEvent("fetching investments by city = " + city);
+        Iterator<Investment> investmentIterator = investmentService.findByCity(city).iterator();
+
+        if (investmentIterator.hasNext()) {
+            List<InvestmentJson> investmentJsons = new ArrayList<>();
+
+            while (investmentIterator.hasNext()) {
+                InvestmentJson investmentJson = new InvestmentJson();
+                try {
+                    investmentJson.fillJsonFromInvestment(investmentIterator.next());
+                } catch (IllegalFormatConversionException e) {
+                    logEvent(e.getLocalizedMessage());
+                    return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+                }
+                investmentJsons.add(investmentJson);
+            }
+            logEvent("investments fetched by city");
+            return new ResponseEntity<>(investmentJsons, HttpStatus.OK);
+        }
+        logEvent("could not fetch investments by city");
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @CrossOrigin
+    @PostMapping(value = "/getByAdvancementState")
+    public ResponseEntity<List<InvestmentJson>> getInvestmentByAdvancementState(@RequestBody ResponseMessage body) {
+        String advancementState = body.getContent();
+        logEvent("fetching investments by advancementState = " + advancementState);
+        Iterator<Investment> investmentIterator = investmentService.findByAdvancementState(advancementState).iterator();
+
+        if (investmentIterator.hasNext()) {
+            List<InvestmentJson> investmentJsons = new ArrayList<>();
+
+            while (investmentIterator.hasNext()) {
+                InvestmentJson investmentJson = new InvestmentJson();
+                try {
+                    investmentJson.fillJsonFromInvestment(investmentIterator.next());
+                } catch (IllegalFormatConversionException e) {
+                    logEvent(e.getLocalizedMessage());
+                    return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+                }
+                investmentJsons.add(investmentJson);
+            }
+            logEvent("investments fetched by advancementState");
+            return new ResponseEntity<>(investmentJsons, HttpStatus.OK);
+        }
+        logEvent("could not fetch investments by advancementState");
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @CrossOrigin
+    @PostMapping(value = "/getByCityAndAdvancementState")
+    public ResponseEntity<List<InvestmentJson>> getInvestmentByCityAndAdvancementState(@RequestBody ResponseMessage body) {
+        String city = body.getContent();
+        String advancementState = body.getContent2();
+        logEvent("fetching investments by city = " + city + " and advancementState = " + advancementState);
+        Iterator<Investment> investmentIterator = investmentService.findByCityAndAdvancementStateAllIgnoreCase(city, advancementState).iterator();
+
+        if (investmentIterator.hasNext()) {
+            List<InvestmentJson> investmentJsons = new ArrayList<>();
+
+            while (investmentIterator.hasNext()) {
+                InvestmentJson investmentJson = new InvestmentJson();
+                try {
+                    investmentJson.fillJsonFromInvestment(investmentIterator.next());
+                } catch (IllegalFormatConversionException e) {
+                    logEvent(e.getLocalizedMessage());
+                    return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+                }
+                investmentJsons.add(investmentJson);
+            }
+            logEvent("investments fetched by city and advancementState");
+            return new ResponseEntity<>(investmentJsons, HttpStatus.OK);
+        }
+        logEvent("could not fetch investments by city and advancementState");
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
     private void logEvent(String event) {
         MessageLog messageLog = new MessageLog();
         messageLog.setTimeStamp(Calendar.getInstance());
