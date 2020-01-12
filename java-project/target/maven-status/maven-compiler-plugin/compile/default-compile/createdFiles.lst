@@ -1,8 +1,14 @@
+investment/service/MessageLogService.class
 investment/service/InvestmentServiceImpl.class
-investment/controller/InvestmentController.class
 investment/models/Investment.class
+investment/controller/MessageLogController.class
+investment/service/MessageLogServiceImpl.class
+investment/Application.class
+investment/models/MessageLog.class
+investment/controller/InvestmentController.class
+investment/models/ResponseMessage.class
 investment/service/InvestmentService.class
 investment/models/InvestmentJson.class
 investment/config/InvestmentConfig.class
 investment/repository/InvestmentRepository.class
-investment/Application.class
+investment/repository/MessageLogRepository.class

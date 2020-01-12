@@ -11,7 +11,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./display-investment.component.css']
 })
 export class DisplayInvestmentComponent implements OnInit {
-  title = 'Investment details';
   public selectedInvestment: Investment;
   public selectedId = '';
 

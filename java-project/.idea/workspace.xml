@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="173d5325-a908-4c7e-a013-525356ee4346" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../angular-project/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/display-investment/display-investment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/display-investment/display-investment.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../angular-project/src/app/display-investment/display-investment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/display-investment/display-investment.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/list-investments/list-investments.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/list-investments/list-investments.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/list-investments/list-investments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/list-investments/list-investments.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../angular-project/src/app/list-investments/list-investments.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/list-investments/list-investments.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/models/ResponseMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/models/ResponseMessage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/app/services/investment-rest-apis.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/app/services/investment-rest-apis.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-project/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-project/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6cffc6dc8d77b698e9df211c940b4c8022824fbc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6cffc6dc8d77b698e9df211c940b4c8022824fbc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc01ffa3d3c433074bf8ed462bf87258a785823b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc01ffa3d3c433074bf8ed462bf87258a785823b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/investment/controller/InvestmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/controller/InvestmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/investment/models/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/models/ResponseMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/investment/repository/InvestmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/repository/InvestmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/investment/service/InvestmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/investment/controller/InvestmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/controller/InvestmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/investment/models/ResponseMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/models/ResponseMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/investment/repository/InvestmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/repository/InvestmentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/investment/service/InvestmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/service/InvestmentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/investment/service/InvestmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/investment/service/InvestmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Investment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Investment-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Investment-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Investment-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,10 +169,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="898" y="165" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1578648669231" />
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1578689612532">
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1578858316829">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578689612532" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578858316829" />
     <state x="659" y="252" key="run.anything.popup" timestamp="1578145064866">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

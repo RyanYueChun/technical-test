@@ -8,7 +8,6 @@ import { InvestmentRestApisService } from '../services/investment-rest-apis.serv
   styleUrls: ['./list-investments.component.css']
 })
 export class ListInvestmentsComponent implements OnInit {
-  public title = 'Investments list';
   public investmentsArray: Investment[] = [];
   public investmentCity = '';
   public investmentAdvancementState = '';

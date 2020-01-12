@@ -8,7 +8,6 @@ import { ResponseMessage } from '../models/ResponseMessage';
   styleUrls: ['./import-investments.component.css']
 })
 export class ImportInvestmentsComponent implements OnInit {
-  public title = 'Import investment data';
   private stringJsonToUpload = '';
   public loadingMessage = 'No file sent';
 

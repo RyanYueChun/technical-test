@@ -10,7 +10,6 @@ import { ResponseMessage } from './models/ResponseMessage';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Investment-project';
   loadingMessage = 'No process done yet';
 
   constructor(
